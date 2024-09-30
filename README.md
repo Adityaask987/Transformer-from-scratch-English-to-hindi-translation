@@ -1,4 +1,6 @@
 # Transformer for English-to-Hindi Translation
+## This code is made in Kaggle notebook using the cfilt/iitb-english-hindi dataset from Hugging face. 
+
 
 This repository contains a Transformer model implemented from scratch to perform English-to-Hindi translation. The model is built using PyTorch and follows the Transformer architecture as described in the paper "[Attention is All You Need](https://arxiv.org/abs/1706.03762)". It uses custom tokenizers and layers to train on parallel corpora of English and Hindi sentences.
 
@@ -51,7 +53,7 @@ jupyter notebook transformer-english-to-hindi.ipynb
 Ensure the dataset paths, model configurations (e.g., number of epochs, batch size), and hyperparameters are correctly set in the notebook.
 After training, the model weights will be saved to the specified directory.
 
-# Translate a sentence:
+## Translate a sentence:
 
 - Use the trained model to translate an English sentence into Hindi:
 ```python
@@ -68,12 +70,12 @@ print(f"Translation: {translated_sentence}")
 - Feed-Forward Layers
 - Residual Connections and Layer Normalization
 - The architecture is designed to handle variable-length sequences and provides efficient parallelization during training.
-# Training Process
+## Training Process
 - Optimizer: Adam optimizer with learning rate scheduling.
 - Loss Function: Cross-Entropy loss with label smoothing.
 - Training Data: The model is trained on parallel English-Hindi sentence pairs.
 - Training Duration: The model is trained for a specified number of epochs with batch size tuning.
-# Dataset
+## Dataset
 This model requires a parallel corpus of English-Hindi sentences.
 Ensure that the dataset is tokenized and preprocessed before training.
 ## Results
